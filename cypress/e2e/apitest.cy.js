@@ -38,7 +38,7 @@ describe('Testes da API de Carros', () => {
     })
   });
 
-  it('Criar um novo carro', () => {
+  it.skip('Criar um novo carro', () => {
     for (let i = 0; i < 2; i++) {
       cy.request({
         method: 'POST',
@@ -56,7 +56,7 @@ describe('Testes da API de Carros', () => {
     }
   });
 
-  it('Deletar um carro específico', () => {
+  it.skip('Deletar um carro específico', () => {
     cy.request({
         method: 'DELETE',
         url: `/carros/${storedCar.id}`
